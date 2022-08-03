@@ -48,3 +48,4 @@ const FilmBox = () => {
     );
     
 }
+export default FilmBox
