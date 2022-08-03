@@ -16,7 +16,7 @@ const FilmForm = ({onFilmSubmit}) => {
     }
 
     const handleUrlChange = (evt) => {
-        setName(evt.target.value);
+    setUrl(evt.target.value);
     }
 
     const handleFilmSubmit = (evt) => {
@@ -25,12 +25,12 @@ const FilmForm = ({onFilmSubmit}) => {
     const nameToSubmit = name.trim();
     const urlToSubmit = url.trim();
 
-    if (!idToSubmit || !nameToSubmit){
+    if (!urlToSubmit || !nameToSubmit){
         return
     }
 
     onFilmSubmit({
-        author: idToSubmit,
+        id: idToSubmit,
         name: nameToSubmit,
         url: urlToSubmit
     });
@@ -57,7 +57,7 @@ const FilmForm = ({onFilmSubmit}) => {
         <input 
             type="name"
             placeholder="Url"
-            value={name}
+            value={url}
             onChange={handleUrlChange}
         />
         <input 

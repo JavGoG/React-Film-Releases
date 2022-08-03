@@ -40,8 +40,8 @@ const FilmBox = () => {
 
     return (
         <>
-            <h1>Films</h1>
-            <FilmList Films={films} />
+            <h1>Upcoming Film Releases for UK</h1>
+            <FilmList films={films} />
             <h2>Add a Film:</h2>
             <FilmForm onFilmSubmit={(film) => addFilm(film)}/>
         </>
